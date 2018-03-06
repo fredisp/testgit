@@ -1,0 +1,26 @@
+win 10 系统 nodejs.msi
+
+1 官网下载nodejs稳定版本
+2 安装nodejs 无脑下一步
+运行 node -v查看node版本 
+npm -v查看npm版本 如果没反应 去用户下面删除.npmrc文件
+3 配置npm的全局模块的存放路径以及cache的路径
+  在node.js的安装路径下建两个文件夹node_global和node_cache
+ cmd中执行命令
+  npm config set prefix "D:\Program Files\nodejs\node_global" 回车
+
+ npm config set cache "D:\Program Files\nodejs\node_cache" 回车
+4： 配置环境变量
+新建【系统变量】
+
+变量名：NODE_PATH
+
+变量值：D:\Program Files\nodejs\node_global\node_modules
+
+（即步骤2全局模块的存放路径，亲测实际应该是D:\Program Files\nodejs\node_global\）
+
+4.2 再将【用户变量】下的path值后追加：
+
+D:\Program Files\nodejs\node_global
+
+（亲测实际在【系统变量】中的path中也追加了NODE_PATH的相同路径，即D:\Program Files\nodejs\node_global）

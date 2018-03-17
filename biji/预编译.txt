@@ -1,0 +1,10 @@
+1.创建AO Activation Object 执行期上下文
+AO{
+}
+2.形参 定义变量
+
+AO{
+    a:undefined,
+    b:undefined,
+}
+3.函数声明
